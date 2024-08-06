@@ -1,15 +1,27 @@
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
+/* Header styling */
 header {
-    background-color: #f0f0f0;
+    background-color: #0073e6;
     padding: 20px;
     text-align: center;
+    color: #fff;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Main content styling */
 main {
     display: flex;
     flex-direction: column;
@@ -21,13 +33,19 @@ section {
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
 }
 
 h2 {
     margin-top: 0;
+    color: #0073e6;
+    font-size: 1.5em;
 }
 
+/* List styling */
 ul {
     list-style: none;
     padding: 0;
@@ -36,43 +54,96 @@ ul {
 
 li {
     margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
 }
 
+li::before {
+    content: "•";
+    color: #0073e6;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+/* Link styling */
 a {
     text-decoration: none;
-    color: #337ab7;
+    color: #0073e6;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #23527c;
+    color: #005bb5;
 }
 
+/* Footer styling */
 footer {
     background-color: #f0f0f0;
     padding: 10px;
     text-align: center;
-    clear: both;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Button styling */
 button {
-    background-color: #4CAF50;
+    background-color: #0073e6;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 button:hover {
-    background-color: #3e8e41;
+    background-color: #005bb5;
+    transform: translateY(-2px);
 }
 
+button:active {
+    background-color: #004494;
+    transform: translateY(0);
+}
+
+/* Frontend demo styling */
 #frontend-demo-container {
     margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #frontend-demo {
     font-size: 24px;
     font-weight: bold;
-    color: #337ab7;
+    color: #0073e6;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 1.75em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
 }
