@@ -1,63 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website - [Your Name]</title>
+    <meta name="description" content="Personal website of Varshith Jakkula, an undergraduate student passionate about Full Stack Development and Machine Learning.">
+    <title>Personal Website - Varshith Jakkula</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Welcome to my Personal Website!</h1>
-        <p>I'm [Your Name], a [Your Degree Level, e.g., undergraduate] student in [Your Major] at [Your University].</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#demos">Demos</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to My Personal Website!</h1>
+        <p>I'm Varshith Jakkula, an undergraduate student in B.Tech at MLR Institute of Technology.</p>
     </header>
+
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a passionate developer with a strong interest in [specific areas of interest, e.g., Full Stack development, Blockchain, etc.]. I'm always looking to improve my skills and take on new challenges.</p>
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>I am a passionate developer with a strong interest in Full Stack Development and Machine Learning. I am constantly seeking to improve my skills and take on new challenges.</p>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
+
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
             <ul>
                 <li>
-                    <h3>Project 1: Lumpy Skin Disease Detection Using Deep Learning </h3>
-                    <p>Designed and implemented a lumpy skin disease prediction application in a 4-person team using Python
-during a 3-day hackathon.</p>
+                    <h3>Project 1: Lumpy Skin Disease Detection Using Deep Learning</h3>
+                    <p>Developed a lumpy skin disease prediction application in a team of four using Python during a 3-day hackathon. The project involved creating a model that effectively detects and predicts lumpy skin disease in cattle.</p>
                     <a href="[GitHub repository link]" target="_blank">View on GitHub</a>
                 </li>
                 <li>
                     <h3>Project 2: Gesture Controlled Video Player</h3>
-                    <p>Engineered an innovative solution utilizing IoT technology to enable users to interact with video playback via hand
-gestures.</p>
+                    <p>Created an innovative IoT-based solution that allows users to control video playback using hand gestures. This project demonstrates the application of sensor technology in enhancing user interaction.</p>
                     <a href="[GitHub repository link]" target="_blank">View on GitHub</a>
                 </li>
             </ul>
         </section>
-        <section id="skills">
-            <h2>Skills</h2>
+
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
             <ul>
                 <li>Full Stack Development (HTML, CSS, JavaScript, React, Node.js)</li>
                 <li>Backend Development (Node.js, Express, MongoDB)</li>
                 <li>Frontend Development (React, Angular, Vue.js)</li>
             </ul>
         </section>
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <p>Want to discuss a project or opportunity? Feel free to reach out to me at 21r21a6690@gmail.com or LinkedIn profile : VARSHITH JAKKULA.</p>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get in Touch</h2>
+            <p>If you'd like to discuss a project or an opportunity, feel free to reach out via email at <a href="mailto:21r21a6690@gmail.com">21r21a6690@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/varshith-jakkula" target="_blank">LinkedIn</a>.</p>
+            <ul>
+                <li><a href="https://github.com/Varshith6690" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/varshith-jakkula" target="_blank">LinkedIn</a></li>
+            </ul>
         </section>
-        <section id="demos">
-            <h2>Demos</h2>
+
+        <section id="demos" aria-labelledby="demos-heading">
+            <h2 id="demos-heading">Demos</h2>
             <button id="full-stack-demo">Full Stack Demo</button>
             <button id="backend-demo">Backend Demo</button>
             <button id="frontend-demo">Frontend Demo</button>
-            <div id="frontend-demo-container">
-                <div id="frontend-demo"></div>
+            <div id="demo-container">
+                <div id="demo-output"></div>
             </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Varshith</p>
+        <p>&copy; 2024 Varshith Jakkula</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
